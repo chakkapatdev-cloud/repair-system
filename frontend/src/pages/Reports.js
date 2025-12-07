@@ -49,7 +49,7 @@ const Reports = () => {
         // Create a hidden form to submit - bypasses IDM interception
         const form = document.createElement('form');
         form.method = 'POST';
-        form.action = `http://localhost:5000/api${endpoint}`;
+        form.action = `http://localhost:5001/api${endpoint}`;
         form.target = '_blank'; // Open in new tab to handle download
         
         // Add token as hidden field

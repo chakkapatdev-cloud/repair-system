@@ -141,7 +141,7 @@ const Navbar = ({ toggleSidebar }) => {
                         <div className="user-avatar" style={{ overflow: 'hidden' }}>
                             {avatar ? (
                                 <img 
-                                    src={`http://localhost:5000/uploads/${avatar}`} 
+                                    src={`http://localhost:5001/uploads/${avatar}`} 
                                     alt="Avatar"
                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                 />

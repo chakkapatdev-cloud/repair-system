@@ -148,7 +148,7 @@ const Profile = () => {
 
     const getAvatarUrl = () => {
         if (avatarPreview) return avatarPreview;
-        if (profileData.avatar) return `http://localhost:5000/uploads/${profileData.avatar}`;
+        if (profileData.avatar) return `http://localhost:5001/uploads/${profileData.avatar}`;
         return null;
     };
 

@@ -333,8 +333,8 @@ const RepairDetail = () => {
                                             {repair.files && repair.files.filter(f => f.file_type !== 'after').length > 0 ? (
                                                 <div className="d-flex gap-2 flex-wrap justify-content-center">
                                                     {repair.files.filter(f => f.file_type !== 'after').map(file => (
-                                                        <a key={file.id} href={`http://localhost:5000/uploads/${file.file_path}`} target="_blank" rel="noopener noreferrer">
-                                                            <img src={`http://localhost:5000/uploads/${file.file_path}`} alt={file.file_name}
+                                                        <a key={file.id} href={`http://localhost:5001/uploads/${file.file_path}`} target="_blank" rel="noopener noreferrer">
+                                                            <img src={`http://localhost:5001/uploads/${file.file_path}`} alt={file.file_name}
                                                                 style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '8px', border: '2px solid #dc3545' }} />
                                                         </a>
                                                     ))}
@@ -350,16 +350,16 @@ const RepairDetail = () => {
                                             {repair.files && repair.files.filter(f => f.file_type === 'after').length > 0 ? (
                                                 <div className="d-flex gap-2 flex-wrap justify-content-center">
                                                     {repair.files.filter(f => f.file_type === 'after').map(file => (
-                                                        <a key={file.id} href={`http://localhost:5000/uploads/${file.file_path}`} target="_blank" rel="noopener noreferrer">
-                                                            <img src={`http://localhost:5000/uploads/${file.file_path}`} alt={file.file_name}
+                                                        <a key={file.id} href={`http://localhost:5001/uploads/${file.file_path}`} target="_blank" rel="noopener noreferrer">
+                                                            <img src={`http://localhost:5001/uploads/${file.file_path}`} alt={file.file_name}
                                                                 style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '8px', border: '2px solid #28a745' }} />
                                                         </a>
                                                     ))}
                                                 </div>
                                             ) : repair.after_image ? (
                                                 <div>
-                                                    <a href={`http://localhost:5000/uploads/${repair.after_image}`} target="_blank" rel="noopener noreferrer">
-                                                        <img src={`http://localhost:5000/uploads/${repair.after_image}`} alt="After"
+                                                    <a href={`http://localhost:5001/uploads/${repair.after_image}`} target="_blank" rel="noopener noreferrer">
+                                                        <img src={`http://localhost:5001/uploads/${repair.after_image}`} alt="After"
                                                             style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '8px', border: '2px solid #28a745' }} />
                                                     </a>
                                                 </div>
